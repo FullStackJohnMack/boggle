@@ -1,6 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content%}
-{{board}}
+{% for row in board%}
+{% for letter in row%}
+{{letter}}
+{% endfor %}
+<br>
+{% endfor %}
+
+<h3 id="high_score"><span>Your score is:</span></h3>
+
+<form id="form">
+    <input type="text" id="guess" placeholder="Enter a word!"">
+    <button type=" button" id="button">Submit</button>
+</form>
+
+<div id="response">
+</div>
 
 {% endblock %}
