@@ -34,7 +34,7 @@ async function checkIfValidFoundWord(guess) {
     setTimeout(function () {
         num1StopsGame = 1;
         updateGameEndStats();
-    }, 15000);
+    }, 60000);
 }
 
 /**

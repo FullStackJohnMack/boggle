@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content%}
-{% for row in board%}
-{% for letter in row%}
-{{letter}}
-{% endfor %}
-<br>
-{% endfor %}
+
+<div class='container'>
+
+    {% for row in board%}
+    {% for letter in row%}
+    <span class='p-2'>{{letter}}</span>
+    {% endfor %}
+    <br>
+    {% endfor %}
+</div>
 
 <h3 id="high_score"><span>Your score is:</span></h3>
 

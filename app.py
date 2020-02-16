@@ -62,6 +62,3 @@ def incrementGameCount():
     else:
         session["game_count"] = 1
     return session.get("game_count")
-
-
-# check all docstrings, write tests for all Python views, enhance timer, refactor
